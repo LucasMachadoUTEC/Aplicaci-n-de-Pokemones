@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Pokémon App</title>
+</head>
+<body>
+    <header>
+        <h1>Pokémon App</h1>
+
+        <!-- buscador de Pokemones -->
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Buscar Pokémon...">
+            <button id="search-button">Buscar</button>
+        </div>
+    </header>
+
+    <!-- Pokemones listados -->
+    <div class="pokemon-list" id="pokemon-list"></div>
+
+    <!-- paginación para mostrar más Pokemones -->
+    <div class="pagination" id="pagination">
+        <button id="prev-button">Anterior</button>
+        <button id="next-button">Siguiente</button>
+    </div>
+
+    <!-- Modal para mostrar mas detalles del Pokémon -->
+<div id="myModal" class="modal">
+    <div class="modal-content">         
+        <h2 id="modal-title"></h2>
+        <img id="modal-image" src="" alt="">
+        <p><strong>Habilidades:</strong> <span id="modal-abilities"></span></p>
+        <p><strong>Altura:</strong> <span id="modal-height"></span></p>
+        <p><strong>Peso:</strong> <span id="modal-weight"></span></p>
+        <button class="close" id="close">Cerrar</button>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
